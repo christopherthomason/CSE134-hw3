@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Christopher Thomason Portfolio</title>
+    <style>
+        my-strong {
+            font-weight: bold;
+            font-style: oblique;
+            text-decoration: underline;
+        }
+
+        my-strong[color="red"] {
+            color: red;
+        }
+
+        my-strong[color="blue"] {
+            color: blue;
+        }
+
+        my-strong[font-style="ital"] {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Christopher Thomason
+        </h1>
+        <nav>
+            <table>
+                <colgroup>
+                    <col span="4">
+                </colgroup>
+                <tr>
+                    <td><a href="/index.html">Home</a></td>
+                    <td><a href="/portfolio.html">Portfolio</a></td>
+                    <td><a href="/about.html">About Me</a></td>
+                    <td><a href="/contact.html">Contact Me</a></td>
+                </tr>
+            </table>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>
+            Experiments
+        </h2>
+
+        <blockquote>
+            01001000 01010100 01001101 01001100
+            <cite>- Christopher Thomason</cite>
+        </blockquote>
+
+        <svg width="150" height="2">
+            <line x1="0" y1="0" x2="150" y2="0" stroke="black" stroke-width="2"/>
+        </svg>
+
+        <br>
+
+        <canvas id="canvasTest" width="100" height="50">
+            <script>
+                let canvas = document.getElementById("canvasTest");
+                let context = canvas.getContext("2d");
+
+                context.fillStyle = "black";
+                context.fillRect(25, 0, 50, 50);
+            </script>
+        </canvas>
+
+        <div>
+            <h3>Important Media</h3>
+
+            <p><code>musicQueue.enqueue(neverGiveYouUp);</code></p>
+            
+            <ol>
+                <li>
+                    <iframe width="400" height="300"
+                            src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                            allowfullscreen></iframe>
+                </li>
+            
+                <li>
+                    <audio controls>
+                        <source src="media/rickroll.mp3" type="audio/mpeg">
+                        Audio element not supported.
+                    </audio>
+                </li>
+
+                <li>
+                    <video controls>
+                        <source src="media/rickrollvid.mp4" type="video/mp4">
+                    </video>
+                </li>
+            </ol>
+        </div>
+
+        <aside>
+            <p>Here's some extra content</p>
+        </aside>
+
+        <pre>
+            The classics
+            never
+            go out of style.
+        </pre>
+
+        <p>Using span to <span class="highlight">make</span> this work</p>
+
+        <details>
+            <summary>What is hidden below?</summary>
+            <p><del>foo</del> <ins>fum</ins></p>
+        </details>
+
+        <template id="resume-entry">
+            <td>Section</td>
+            <td>
+                <ul>
+                    <li>Item</li>
+                    <li>Item 2</li>
+                </ul>
+            </td>
+        </template>
+
+        <dialog>
+            <p>I love pop ups</p>
+        </dialog>
+
+        <hgroup>
+            <h2>Seems useful!</h2>
+        </hgroup>
+
+        <dl>
+            <dt>Catalog</dt>
+            <dd>a complete list of items, typically one in alphabetical or other systematic order.</dd>
+        </dl>
+
+        <p><dfn>AWS</dfn> stands for Amazon Web Services</p>
+        <p>Pressing <kbd>Alt + F4</kbd> closes your application on Windows</p>
+        <noscript>
+            <p>If you do not have JavaScript enabled, you will see this message!</p>
+        </noscript>
+
+        <address>
+            <a href="placeholder@notreal.com">Email Me</a>
+        </address>
+
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+            <label for="favpet">Choose between cats and dogs:</label>
+            <input list="favpets" id="favpet" name="favpet">
+            <datalist id="favpets">
+                <option value="Cats">
+                <option value="Dogs">
+            </datalist>
+
+            <button type="button">Send</button>
+            
+            <select>
+                <optgroup id="opts" label="optgroup">
+                    <option>Foo</option>
+                    <option>Lorem Ipsum</option>
+                </optgroup>
+            </select>
+        </form>
+
+        <p>Showing off my <my-strong color="blue">custom</my-strong> <my-strong color="red">strong</my-strong> <my-strong font-style="ital">tag</my-strong></p>
+
+        <script>
+            class HelloWorldElement extends HTMLElement {
+                constructor() {
+                    super();
+                }
+
+                connectedCallback() {
+                    console.log('Hello, World!');
+                }
+            }
+
+            customElements.define('hello-world', HelloWorldElement);
+        </script>
+
+        <hello-world></hello-world>
+    </main>
+
+    <section>
+        <h2>Search</h2>
+        <form action="/search" method="get">
+            <label for="query">Search:</label>
+            <input type="text" id="query" name="query" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <footer>
+        <hr>
+        <p>This page was <em>developed</em> by Christopher Thomason</p>
+    </footer>
+</body>
+</html>
