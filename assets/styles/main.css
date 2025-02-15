@@ -1,0 +1,13 @@
+/* main.css */
+
+html,
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: darkcyan;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
