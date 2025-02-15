@@ -2,12 +2,31 @@
 
 html,
 body {
-    background-color: lightgray;
+    background-color: white;
 }
 
 header {
-    background-color: darkcyan;
+    display: flex;
+    background-color: aquamarine;
     text-align: center;
     padding: 20px;
     color: white;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+/**** flexbox ****/
+.flexbox {
+    display: flex;
+    background-color: whitesmoke;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap row;
+}
+
+.box {
+    background-color: lightgray;
+    color: white;
+    margin: 10px;
 }
