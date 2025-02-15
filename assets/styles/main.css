@@ -50,13 +50,12 @@ main {
     display: flex;
     background-color: white;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap row;
+    flex-direction: column;
 }
 
 .box {
-    background-color: whitesmoke;
     color: black;
     margin: 10px;
 }
@@ -64,4 +63,10 @@ main {
 img {
     align-self: flex-end;
     margin: 10px;
+}
+
+/** footer **/
+footer {
+    font-size: small;
+    text-align: center;
 }
