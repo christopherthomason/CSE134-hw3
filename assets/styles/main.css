@@ -5,17 +5,18 @@ body {
     background-color: white;
 }
 
+/** header **/
 header {
     display: flex;
-    background-color: aquamarine;
+    background-color: lightskyblue;
     text-align: center;
     padding: 20px;
     color: white;
-    justify-content: flex-start;
-    flex-wrap: wrap row-reverse;
+    justify-content: space-between;
+    align-content: center;
 }
 
-/**** flexbox ****/
+/** flexbox in main **/
 .flexbox {
     display: flex;
     background-color: white;
@@ -28,5 +29,10 @@ header {
 .box {
     background-color: lightgray;
     color: white;
+    margin: 10px;
+}
+
+img {
+    align-self: flex-end;
     margin: 10px;
 }
