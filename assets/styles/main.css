@@ -4,6 +4,24 @@ html,
 body {
     background-color: white;
 }
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Roboto/static/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: bold;
+    font-weight: 400;
+    src: url("../fonts/Roboto/static/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/Roboto/static/Roboto-Italic.ttf") format("truetype");
+}
 
 /** header **/
 header {
@@ -14,9 +32,20 @@ header {
     color: white;
     justify-content: space-between;
     align-content: center;
+    font-family: "Roboto";
+}
+
+nav {
+    align-content: center;
 }
 
 /** flexbox in main **/
+
+main {
+    text-align: center;
+    font-family: "Roboto";
+}
+
 .flexbox {
     display: flex;
     background-color: white;
