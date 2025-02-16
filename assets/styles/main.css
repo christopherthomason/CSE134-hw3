@@ -31,11 +31,13 @@ body {
 
 /** header **/
 header {
+    width: 100dvw;
+    height: 10dvh;
     display: flex;
     background-color: var(--main-alternate-color, lightskyblue);
     text-align: center;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
     color: white;
     justify-content: space-between;
     align-content: center;
@@ -44,6 +46,23 @@ header {
 
 nav {
     align-content: center;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: slateblue;
+}
+
+a:visited:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: lightblue;
 }
 
 /** flexbox in main **/
@@ -71,6 +90,21 @@ img {
     align-self: flex-end;
     max-width: 30%;
     max-height: 50%;
+}
+
+/** other main elements **/
+button {
+    background: gray;
+    color: white;
+    padding: 1% 1%;
+    border: none;
+    cursor: pointer;
+    transition: lightblue 0.25s ease-in, transform 0.25s;
+}
+
+button:hover {
+    background: lightblue;
+    transform: scale(1.1);
 }
 
 /** footer **/
