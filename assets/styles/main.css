@@ -112,8 +112,8 @@ picture:not(:has(img)) {
 
 img {
     align-self: flex-end;
-    max-width: 75%;
-    max-height: 75%;
+    object-fit: cover;
+    object-position: right top;
 }
 
 /** other main elements **/
