@@ -23,10 +23,24 @@
     </header>
 
     <main>
-        <div>
-            <h2>Contact Me</h2>
+        <div class="flexbox">
+            <h1 class="box">Contact Me</h1>
 
-            <button>Send</button>
+            <p class="box">Email me at <em>christophercthomason@gmail.com</em> or fill out the information below to send me a message!</p>
+
+            <form action="/submit" method="post">
+                <fieldset class="box">
+                    <legend>Contact Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+                <button class="box">Send</button>   
+            </form>
         </div>
     </main>
 

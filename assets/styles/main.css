@@ -31,7 +31,7 @@ body {
 
 /** header **/
 header {
-    width: 100%;
+    width: 97.5dvw;
     height: 7.5%;
     display: flex;
     background-color: var(--main-alternate-color, lightskyblue);
@@ -92,6 +92,7 @@ main {
     padding: 2%;
     justify-content: flex-start;
     align-items: flex-start;
+    align-content: flex-start;
     flex-direction: column;
 }
 
