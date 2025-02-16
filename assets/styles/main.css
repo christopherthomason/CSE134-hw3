@@ -1,8 +1,14 @@
 /* main.css */
 
+:root {
+    --main-font-family: "Roboto";
+    --main-background-color: white;
+    --main-alternate-color: lightskyblue;
+}
+
 html,
 body {
-    background-color: white;
+    background-color: var(--main-background-color, white);
 }
 @font-face {
     font-family: "Roboto";
@@ -26,14 +32,14 @@ body {
 /** header **/
 header {
     display: flex;
-    background-color: lightskyblue;
+    background-color: var(--main-alternate-color, lightskyblue);
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
     color: white;
     justify-content: space-between;
     align-content: center;
-    font-family: "Roboto";
+    font-family: var(--main-font-family, "Arial");
 }
 
 nav {
@@ -44,13 +50,13 @@ nav {
 
 main {
     text-align: center;
-    font-family: "Roboto";
+    font-family: var(--main-font-family, "Arial");
 }
 
 .flexbox {
     display: flex;
-    background-color: white;
-    padding: 10px;
+    background-color: var(--main-background-color, white);
+    padding: 5%;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -58,12 +64,13 @@ main {
 
 .box {
     color: black;
-    margin: 10px;
+    margin: 1.5em;
 }
 
 img {
     align-self: flex-end;
-    margin: 10px;
+    max-width: 30%;
+    max-height: 50%;
 }
 
 /** footer **/
