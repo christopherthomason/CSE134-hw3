@@ -28,7 +28,8 @@ header {
     display: flex;
     background-color: lightskyblue;
     text-align: center;
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: white;
     justify-content: space-between;
     align-content: center;
