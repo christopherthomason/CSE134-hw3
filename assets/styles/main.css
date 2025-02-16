@@ -31,8 +31,8 @@ body {
 
 /** header **/
 header {
-    width: 100dvw;
-    height: 10dvh;
+    width: 90dvw;
+    height: 5dvh;
     display: flex;
     background-color: var(--main-alternate-color, lightskyblue);
     text-align: center;
@@ -62,7 +62,7 @@ a:visited:hover {
 
 a:hover {
     text-decoration: underline;
-    color: lightblue;
+    color: rgb(166, 77, 255);
 }
 
 /** flexbox in main **/
@@ -72,7 +72,7 @@ main {
     font-family: var(--main-font-family, "Arial");
 }
 
-.flexbox {
+.home-flexbox {
     display: flex;
     background-color: var(--main-background-color, white);
     padding: 5%;
@@ -81,9 +81,23 @@ main {
     flex-direction: column;
 }
 
-.box {
+.home-box {
     color: black;
     margin: 1.5em;
+}
+
+.flexbox {
+    display: flex;
+    background-color: var(--main-background-color, white);
+    padding: 2%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.box {
+    color: black;
+    margin: 1.25em
 }
 
 img {
